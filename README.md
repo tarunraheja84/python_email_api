@@ -7,7 +7,7 @@ This is a simple Python Flask API for sending emails conveniently using a POST r
 
 <h4>Endpoint</h4>
 
-POST https://python-email-api.onrender.com
+POST <a href="https://python-email-api.vercel.app" target="_blank">https://python-email-api.vercel.app</a>
 
 <h4>Request Body</h4>
 
