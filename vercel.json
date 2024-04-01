@@ -1,6 +1,9 @@
 {
     "version": 2,
     "buildCommand": "python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install flask && python app.py",
+    "builds": [
+      { "src": "server.py", "use": "@vercel/python" }
+    ],
     "routes": [
       { "src": "/(.*)", "dest": "app.py" }
     ]
