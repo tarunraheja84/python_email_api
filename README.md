@@ -23,7 +23,7 @@ The API expects a JSON object with the following fields:
 
   <li><b>body:</b> Body content of the email.</li>
 
-  <li><b>files (optional):</b> Array of path of files to attach with the email. Ensure the files are present and accessible to the API, files will be sent with their filenames and not file path.</li>
+  <li><b>files (optional):</b> Array of path of files to attach with the email. Files will be sent with their filenames and not file path.</li>
 </ul>
 
 Here's an example request body:
