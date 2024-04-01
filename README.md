@@ -7,7 +7,7 @@ This is a simple Python Flask API for sending emails conveniently using a POST r
 
 <h4>Endpoint</h4>
 
-POST <a href="https://python-email-api.vercel.app" target="_blank">`https://python-email-api.vercel.app`</a>
+POST <a href="https://python-email-api.vercel.app" target="_blank" rel="noopener noreferrer">`https://python-email-api.vercel.app/`</a>
 
 <h4>Request Body</h4>
 
@@ -15,7 +15,7 @@ The API expects a JSON object with the following fields:
 <ul>
   <li><b>sender_email:</b> Your email address.</li>
 
-  <li><b>sender_account_app_password:</b> Your email account "app password". Note: Please turn on 2-factor authentication and then visit here <a href="https://myaccount.google.com/apppasswords" target="_blank">`https://myaccount.google.com/apppasswords`</a> to create an app password for your account.</li>
+  <li><b>sender_account_app_password:</b> Your email account "app password". Note: Please turn on 2-factor authentication and then visit here <a href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener noreferrer">`https://myaccount.google.com/apppasswords`</a> to create an app password for your account.</li>
 
   <li><b>receiver_emails:</b> Array of Email address of recipients.</li>
 
