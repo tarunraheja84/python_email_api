@@ -1,5 +1,5 @@
 
-<h2>Python Email API</h1>
+<h2>Tarun's Python Email API</h1>
 
 This is a simple Python Flask API for sending emails conveniently using a POST request. It's built to make sending emails programmatically easy and hassle-free.
 
