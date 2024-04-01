@@ -1,13 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "use": "@vercel/python3",
-        "config": {
-          "buildCommand": "python3 -m venv myenv && source myenv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt && python3 app.py"
-        }
-      }
-    ],
     "routes": [
       {
         "src": "/(.*)",
