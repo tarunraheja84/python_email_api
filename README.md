@@ -1,13 +1,13 @@
 
 <h2>Tarun's Python Email API</h1>
 
-This is a simple Python Flask API for sending emails conveniently using a POST request. It's built to make sending emails programmatically easy and hassle-free.
+This is a simple Python Flask API for sending emails conveniently using a POST request. It's built by Tarun to make sending emails programmatically easy and hassle-free.
 
 <h3>How to Use</h3>
 
 <h4>Endpoint</h4>
 
-POST <a href="https://python-email-api.vercel.app" target="_blank" rel="noopener noreferrer">`https://python-email-api.vercel.app/`</a>
+POST <a href="https://tarun-email-api.onrender.com" target="_blank" rel="noopener noreferrer">`https://tarun-email-api.onrender.com`</a>
 
 <h4>Request Body</h4>
 
@@ -24,6 +24,8 @@ The API expects a JSON object with the following fields:
   <li><b>body:</b> Body content of the email.</li>
 
   <li><b>files (optional):</b> Array of path of files to attach with the email. Please specify correct paths, files will be sent with their filenames and not file path.</li>
+
+  <li><b>api_password:</b> Contact Tarun (9896079185).</li>
 </ul>
 
 Here's an example request body:
@@ -38,8 +40,10 @@ Here's an example request body:
   
       subject: "Test Email",
   
-      body: "This is a test email sent from Python Flask API.",
+      body: "This is a test email sent from Tarun's Python Flask API.",
   
-      files: ["/Users/mac/desktop/file1.txt", "file2.pdf"]
+      files: ["/Users/mac/desktop/file1.jpg", "file2.pdf"],
+
+      api_password: "Contact Tarun (9896079185)"
   
     }

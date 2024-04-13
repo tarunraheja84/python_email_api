@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify
+from dotenv import load_dotenv
+from flask_cors import CORS
 import smtplib
 import os
 from email.mime.text import MIMEText
@@ -7,6 +9,11 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 app = Flask(__name__)
+load_dotenv()
+CORS(app)  # Allow requests from all origins
+
+# Get the environment variables
+app.config['API_PASSWORD'] = os.environ.get('API_PASSWORD')
 
 def send_email(sender_email, sender_account_app_password, receiver_emails, subject, body, files=[]):
     # Set up the MIME
@@ -45,7 +52,11 @@ def send_email_api():
     subject = data.get('subject')
     body = data.get('body')
     files = data.get('files', [])
+    api_password = data.get('api_password')
 
+    if(api_password != app.config['API_PASSWORD']):
+        return jsonify({'error': 'wrong api_password'}), 500
+    
     try:
         send_email(sender_email, sender_account_app_password, receiver_emails, subject, body, files)
         return jsonify({'message': 'Email sent successfully'}), 200
