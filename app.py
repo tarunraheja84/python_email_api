@@ -52,10 +52,6 @@ def send_email_api():
     subject = data.get('subject')
     body = data.get('body')
     files = data.get('files', [])
-    api_password = data.get('api_password')
-
-    if(api_password != app.config['API_PASSWORD']):
-        return jsonify({'error': 'wrong api_password'}), 500
     
     try:
         send_email(sender_email, sender_account_app_password, receiver_emails, subject, body, files)
