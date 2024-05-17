@@ -5,10 +5,6 @@ This is a simple Python Flask API for sending emails conveniently using a POST r
 
 <h3>How to Use</h3>
 
-<h4>Endpoint</h4>
-
-POST <a href="https://tarun-email-api.onrender.com" target="_blank" rel="noopener noreferrer">`https://tarun-email-api.onrender.com`</a>
-
 <h4>Request Body</h4>
 
 The API expects a JSON object with the following fields:
