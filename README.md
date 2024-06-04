@@ -20,8 +20,6 @@ The API expects a JSON object with the following fields:
   <li><b>body:</b> Body content of the email.</li>
 
   <li><b>files (optional):</b> Array of path of files to attach with the email. Please specify correct paths, files will be sent with their filenames and not file path.</li>
-
-  <li><b>api_password:</b> Contact Tarun (9896079185).</li>
 </ul>
 
 Here's an example request body:
@@ -40,6 +38,4 @@ Here's an example request body:
   
       files: ["/Users/mac/desktop/file1.jpg", "file2.pdf"],
 
-      api_password: "Contact Tarun (9896079185)"
-  
     }
